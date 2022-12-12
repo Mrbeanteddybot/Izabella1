@@ -1,0 +1,22 @@
+services:
+  drone-vc-p:
+    build: .
+    environment:
+      BOT_TOKEN: $BOT_TOKEN 
+      ADMINS: $ADMINS
+      MONGODB_URI: $MONGODB_URI
+      ENV: $ENV
+      API_HASH: $API_HASH
+      API_ID: $API_ID
+      ALLOW_EXCL: $ALLOW_EXCL
+      DEL_CMDS: $DEL_CMDS
+      CASH_API_KEY: $CASH_API_KEY
+      EVENT_LOGS: $EVENT_LOGS
+      OWNER_ID: $OWNER_ID
+      START_IMG: $START_IMG
+      SUPPORT_CHAT: $SUPPORT_CHAT
+      TIME_API_KEY: $TIME_API_KEY
+      TOKEN: $TOKEN
+    resources:
+      cpu: 1000m
+      memory: 3Gi
